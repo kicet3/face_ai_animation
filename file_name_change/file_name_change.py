@@ -6,8 +6,8 @@ import json
 file_path="E:/AI/crawl/download/man/google"
 file_names=os.listdir(file_path)
 
-client_id="클라이언트 아이디"
-client_secret = "클라이언트 시크릿 키"
+client_id="클라이언트 아이디" #네이버 파파고 api 사용
+client_secret = "클라이언트 시크릿 키" 
 
 for file_name in file_names:
 	encText = urllib.parse.quote(str(file_name))
