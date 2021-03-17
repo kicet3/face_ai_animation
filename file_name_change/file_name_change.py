@@ -21,6 +21,7 @@ for file_name in file_names:
 	if(rescode==200):
 		response_body = json.loads(response.read())
 		trans_text = response_body['message']['result']['translatedText']
+		trans_text = re.sub(r"[^a-zA-Z0-9]","",trans_text)
 	else:
 		print("Error Code:" + rescode)
 	i = 1
