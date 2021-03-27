@@ -112,24 +112,25 @@
                 console.log(prediction[0].className);
                 switch(prediction[0].className){
                     case "Naruto":
-                        resultMessage="나루토"
+                        resultMessage="나루토";
                         break;
                     case "Conan":
-                        resultMessage="코난"
+                        resultMessage="코난";
                         break;
                     case "Son Okong":
-                        resultMessage="손오공"
+                        resultMessage="손오공";
                         break;
                     case "Inuyasha":
-                        resultMessage="이누야샤"
+                        resultMessage="이누야샤";
                         break;
                     case "Kazehaya Shota":
-                        resultMessage="카제하야 쇼타"
+                        resultMessage="카제하야 쇼타";
                         break;
                     case "Loopy":
-                        resultMessage="루피"
+                        resultMessage="루피";
                         break;
                 }
+                console.log(resultMessage);
                 $('.result-message').html(resultMessage);
                 for (let i = 0; i < maxPredictions; i++) {
                     const classPrediction =
