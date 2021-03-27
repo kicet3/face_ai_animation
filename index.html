@@ -109,7 +109,6 @@
                 var image =  document.getElementById('face-image')
                 const prediction = await model.predict(image,false);
                 prediction.sort((a,b) => parseFloat(b.probability) - parseFloat(a.probability));
-                console.log(prediction[0].className);
                 switch(prediction[0].className){
                     case "Naruto":
                         resultMessage="나루토";
