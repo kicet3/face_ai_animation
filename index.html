@@ -111,32 +111,23 @@
                 prediction.sort((a,b) => parseFloat(b.probability) - parseFloat(a.probability));
                 console.log(prediction[0].className);
                 switch(prediction[0].className){
-                    case "나루토":
+                    case "Naruto":
                         resultMessage="나루토"
                         break;
-                    case "나루토 사스케":
-                        resultMessage="사스케"
+                    case "Conan":
+                        resultMessage="코난"
                         break;
-                    case "나루토 이타치":
-                        resultMessage="이타치"
+                    case "Son Okong":
+                        resultMessage="손오공"
                         break;
-                    case "너에게 닿기를 미우라 켄토":
-                        resultMessage="미우라 켄토"
+                    case "Inuyasha":
+                        resultMessage="이누야샤"
                         break;
-                    case "너에게 닿기를 카제하야 쇼타":
+                    case "Kazehaya Shota":
                         resultMessage="카제하야 쇼타"
                         break;
-                    case "원피스 루피":
+                    case "Loopy":
                         resultMessage="루피"
-                        break;
-                    case "도라에몽 노진구":
-                        resultMessage="노진구"
-                        break;
-                    case "원피스 상디":
-                        resultMessage="상디"
-                        break;
-                    case "코난 남도일":
-                        resultMessage="남도일"
                         break;
                 }
                 $('.result-message').html(resultMessage);
