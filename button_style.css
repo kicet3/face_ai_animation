@@ -1,0 +1,63 @@
+.button_wrapper{
+    width:150px;
+    height:40px;
+    margin:20px auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.button_wrapper p{
+    width:30px;
+    height:10px;
+    font-size:15px;
+    text-align:center;
+    margin:auto 0;
+    margin-top:10px;
+}
+
+.button_wrapper .btn-switch{
+    position:relative;
+    width:60px;
+    height:10px;
+    border-radius:18px;
+    border:0px;
+    background:white;
+    margin:auto;
+    border:10px solid gray;
+}
+
+.button_wrapper .btn-switch input{
+    display:none;
+}
+
+.button_wrapper .slide-object{
+    position:absolute;
+    cursor:pointer;
+    background:#ccc;
+    transition:0.4s;
+    border-radius:20px;
+}
+
+.button_wrapper .slide-object:before{
+    position:absolute;
+    content:"";
+    text-align:center;
+    left:-10px;
+    top:-11px;
+    height:32px;
+    width:32px;
+    background:#f0758b;
+    transition:0.4s;
+    border-radius:50%;
+    box-shadow:0 2px 2px #bfbebe;
+}
+
+.button_wrapper input:checked + .slide-object{
+    background:rgba(81,214,151,0.62);
+}
+
+.button_wrapper input:checked + .slide-object:before{
+    transform: translateX(50px);
+    background:#0081cc;
+}
